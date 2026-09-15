@@ -1,0 +1,3781 @@
+{
+  "shipments": [
+    {
+      "cargo_id": "CONT-8001",
+      "mode": "MARITIME",
+      "vessel_name": "COSCO SHIPPING GEMINI",
+      "origin": "Shanghai Port",
+      "destination": "Port of Rotterdam",
+      "current_status": "BOTTLENECK_DETECTED",
+      "current_coordinates": [
+        31.2304,
+        121.4737
+      ],
+      "active_route_coords": [
+        [
+          31.2304,
+          121.4737
+        ],
+        [
+          1.3521,
+          103.8198
+        ],
+        [
+          29.9753,
+          32.5599
+        ],
+        [
+          51.9244,
+          4.4777
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 508.9,
+        "cost_usd": 14940.0,
+        "co2_kg": 229.0,
+        "sla_risk": "HIGH"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc00",
+        "block_number": 45612100,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Shanghai Port [31.2304, 121.4737]",
+        "destination_point": "Port of Rotterdam [51.9244, 4.4777]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8001",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Shanghai Port",
+            "RAIL_CHENGDU",
+            "HUB_WARSAW",
+            "Port of Rotterdam"
+          ],
+          "waypoint_coords": [
+            [
+              31.2304,
+              121.4737
+            ],
+            [
+              30.5728,
+              104.0668
+            ],
+            [
+              52.237,
+              21.0175
+            ],
+            [
+              51.9244,
+              4.4777
+            ]
+          ],
+          "estimated_transit_hours": 141.5,
+          "base_freight_cost_usd": 12136.0,
+          "co2_emissions_kg": 272.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Shanghai Port (Port)",
+            "end_node": "Port of Rotterdam (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc00",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8001",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Shanghai Port",
+            "AIR_DUBAI",
+            "HUB_FRANKFURT_01",
+            "Port of Rotterdam"
+          ],
+          "waypoint_coords": [
+            [
+              31.2304,
+              121.4737
+            ],
+            [
+              25.2532,
+              55.3657
+            ],
+            [
+              50.1109,
+              8.6821
+            ],
+            [
+              51.9244,
+              4.4777
+            ]
+          ],
+          "estimated_transit_hours": 21.5,
+          "base_freight_cost_usd": 98686.0,
+          "co2_emissions_kg": 5805.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Shanghai Port (Port)",
+            "end_node": "Port of Rotterdam (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc00",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8002",
+      "mode": "MARITIME",
+      "vessel_name": "EVERGREEN EVER GIVEN",
+      "origin": "Port of Los Angeles",
+      "destination": "Port of New York/New Jersey",
+      "current_status": "IN_TRANSIT",
+      "current_coordinates": [
+        33.7426,
+        -118.2673
+      ],
+      "active_route_coords": [
+        [
+          33.7426,
+          -118.2673
+        ],
+        [
+          9.08,
+          -79.68
+        ],
+        [
+          40.6681,
+          -74.161
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 310.7,
+        "cost_usd": 10430.0,
+        "co2_kg": 125.0,
+        "sla_risk": "LOW"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc01",
+        "block_number": 45612101,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Los Angeles [33.7426, -118.2673]",
+        "destination_point": "Port of New York/New Jersey [40.6681, -74.161]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8002",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Los Angeles",
+            "HUB_CHICAGO_01",
+            "Port of New York/New Jersey"
+          ],
+          "waypoint_coords": [
+            [
+              33.7426,
+              -118.2673
+            ],
+            [
+              41.8781,
+              -87.6298
+            ],
+            [
+              40.6681,
+              -74.161
+            ]
+          ],
+          "estimated_transit_hours": 64.7,
+          "base_freight_cost_usd": 4943.0,
+          "co2_emissions_kg": 111.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Los Angeles (Port)",
+            "end_node": "Port of New York/New Jersey (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc01",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8002",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Los Angeles",
+            "AIR_ATLANTA_01",
+            "Port of New York/New Jersey"
+          ],
+          "waypoint_coords": [
+            [
+              33.7426,
+              -118.2673
+            ],
+            [
+              33.749,
+              -84.388
+            ],
+            [
+              40.6681,
+              -74.161
+            ]
+          ],
+          "estimated_transit_hours": 11.7,
+          "base_freight_cost_usd": 36592.0,
+          "co2_emissions_kg": 2152.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Los Angeles (Port)",
+            "end_node": "Port of New York/New Jersey (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc01",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8003",
+      "mode": "MARITIME",
+      "vessel_name": "MAERSK MC-KINNEY MOLLER",
+      "origin": "Port of Shenzhen",
+      "destination": "Port of Hamburg",
+      "current_status": "BOTTLENECK_DETECTED",
+      "current_coordinates": [
+        22.5431,
+        114.0579
+      ],
+      "active_route_coords": [
+        [
+          22.5431,
+          114.0579
+        ],
+        [
+          6.9271,
+          79.8612
+        ],
+        [
+          -34.3568,
+          18.474
+        ],
+        [
+          53.5511,
+          9.9937
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 693.8,
+        "cost_usd": 19146.0,
+        "co2_kg": 326.0,
+        "sla_risk": "HIGH"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc02",
+        "block_number": 45612102,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Shenzhen [22.5431, 114.0579]",
+        "destination_point": "Port of Hamburg [53.5511, 9.9937]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8003",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Shenzhen",
+            "RAIL_CHENGDU",
+            "HUB_WARSAW",
+            "Port of Hamburg"
+          ],
+          "waypoint_coords": [
+            [
+              22.5431,
+              114.0579
+            ],
+            [
+              30.5728,
+              104.0668
+            ],
+            [
+              52.237,
+              21.0175
+            ],
+            [
+              53.5511,
+              9.9937
+            ]
+          ],
+          "estimated_transit_hours": 132.1,
+          "base_freight_cost_usd": 11259.0,
+          "co2_emissions_kg": 252.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Shenzhen (Port)",
+            "end_node": "Port of Hamburg (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc02",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8003",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Shenzhen",
+            "AIR_DUBAI",
+            "HUB_FRANKFURT_01",
+            "Port of Hamburg"
+          ],
+          "waypoint_coords": [
+            [
+              22.5431,
+              114.0579
+            ],
+            [
+              25.2532,
+              55.3657
+            ],
+            [
+              50.1109,
+              8.6821
+            ],
+            [
+              53.5511,
+              9.9937
+            ]
+          ],
+          "estimated_transit_hours": 20.9,
+          "base_freight_cost_usd": 94842.0,
+          "co2_emissions_kg": 5579.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Shenzhen (Port)",
+            "end_node": "Port of Hamburg (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc02",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8004",
+      "mode": "MARITIME",
+      "vessel_name": "CMA CGM ANTOINE",
+      "origin": "Port of Busan",
+      "destination": "Port of Long Beach",
+      "current_status": "IN_TRANSIT",
+      "current_coordinates": [
+        35.1796,
+        129.0756
+      ],
+      "active_route_coords": [
+        [
+          35.1796,
+          129.0756
+        ],
+        [
+          35.4437,
+          139.638
+        ],
+        [
+          33.7701,
+          -118.1937
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 352.4,
+        "cost_usd": 11380.0,
+        "co2_kg": 147.0,
+        "sla_risk": "LOW"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc03",
+        "block_number": 45612103,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Busan [35.1796, 129.0756]",
+        "destination_point": "Port of Long Beach [33.7701, -118.1937]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8004",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Busan",
+            "Port of Yokohama",
+            "Port of Long Beach"
+          ],
+          "waypoint_coords": [
+            [
+              35.1796,
+              129.0756
+            ],
+            [
+              35.4437,
+              139.638
+            ],
+            [
+              33.7701,
+              -118.1937
+            ]
+          ],
+          "estimated_transit_hours": 142.9,
+          "base_freight_cost_usd": 12269.0,
+          "co2_emissions_kg": 275.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Busan (Port)",
+            "end_node": "Port of Long Beach (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc03",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8004",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Busan",
+            "Port of Long Beach"
+          ],
+          "waypoint_coords": [
+            [
+              35.1796,
+              129.0756
+            ],
+            [
+              33.7701,
+              -118.1937
+            ]
+          ],
+          "estimated_transit_hours": 18.9,
+          "base_freight_cost_usd": 81937.0,
+          "co2_emissions_kg": 4820.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Busan (Port)",
+            "end_node": "Port of Long Beach (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc03",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8005",
+      "mode": "MARITIME",
+      "vessel_name": "ONE STORK",
+      "origin": "Port of Ningbo",
+      "destination": "Port of Jebel Ali",
+      "current_status": "BOTTLENECK_DETECTED",
+      "current_coordinates": [
+        29.8683,
+        121.544
+      ],
+      "active_route_coords": [
+        [
+          29.8683,
+          121.544
+        ],
+        [
+          2.5,
+          101.5
+        ],
+        [
+          24.9857,
+          55.0642
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 336.8,
+        "cost_usd": 11024.0,
+        "co2_kg": 139.0,
+        "sla_risk": "HIGH"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc04",
+        "block_number": 45612104,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Ningbo [29.8683, 121.544]",
+        "destination_point": "Port of Jebel Ali [24.9857, 55.0642]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8005",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Ningbo",
+            "Malacca Strait",
+            "Port of Jebel Ali"
+          ],
+          "waypoint_coords": [
+            [
+              29.8683,
+              121.544
+            ],
+            [
+              2.5,
+              101.5
+            ],
+            [
+              24.9857,
+              55.0642
+            ]
+          ],
+          "estimated_transit_hours": 135.6,
+          "base_freight_cost_usd": 11584.0,
+          "co2_emissions_kg": 259.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Ningbo (Port)",
+            "end_node": "Port of Jebel Ali (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc04",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8005",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Ningbo",
+            "Port of Jebel Ali"
+          ],
+          "waypoint_coords": [
+            [
+              29.8683,
+              121.544
+            ],
+            [
+              24.9857,
+              55.0642
+            ]
+          ],
+          "estimated_transit_hours": 14.7,
+          "base_freight_cost_usd": 55194.0,
+          "co2_emissions_kg": 3247.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Ningbo (Port)",
+            "end_node": "Port of Jebel Ali (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc04",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8006",
+      "mode": "MARITIME",
+      "vessel_name": "HAPAG-LLOYD AL DHAFRA",
+      "origin": "Port of Antwerp",
+      "destination": "Port of Genoa",
+      "current_status": "IN_TRANSIT",
+      "current_coordinates": [
+        51.2194,
+        4.4025
+      ],
+      "active_route_coords": [
+        [
+          51.2194,
+          4.4025
+        ],
+        [
+          35.9562,
+          -5.6026
+        ],
+        [
+          44.4056,
+          8.9463
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 169.8,
+        "cost_usd": 7225.0,
+        "co2_kg": 51.0,
+        "sla_risk": "LOW"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc05",
+        "block_number": 45612105,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Antwerp [51.2194, 4.4025]",
+        "destination_point": "Port of Genoa [44.4056, 8.9463]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8006",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Antwerp",
+            "Strait of Gibraltar",
+            "Port of Genoa"
+          ],
+          "waypoint_coords": [
+            [
+              51.2194,
+              4.4025
+            ],
+            [
+              35.9562,
+              -5.6026
+            ],
+            [
+              44.4056,
+              8.9463
+            ]
+          ],
+          "estimated_transit_hours": 57.6,
+          "base_freight_cost_usd": 4279.0,
+          "co2_emissions_kg": 96.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Antwerp (Port)",
+            "end_node": "Port of Genoa (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc05",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8006",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Antwerp",
+            "Port of Genoa"
+          ],
+          "waypoint_coords": [
+            [
+              51.2194,
+              4.4025
+            ],
+            [
+              44.4056,
+              8.9463
+            ]
+          ],
+          "estimated_transit_hours": 7.1,
+          "base_freight_cost_usd": 7053.0,
+          "co2_emissions_kg": 415.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Antwerp (Port)",
+            "end_node": "Port of Genoa (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc05",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8007",
+      "mode": "MARITIME",
+      "vessel_name": "MSC GULSUN",
+      "origin": "Port of Hong Kong",
+      "destination": "Port of Tokyo",
+      "current_status": "BOTTLENECK_DETECTED",
+      "current_coordinates": [
+        22.3193,
+        114.1694
+      ],
+      "active_route_coords": [
+        [
+          22.3193,
+          114.1694
+        ],
+        [
+          22.6273,
+          120.3014
+        ],
+        [
+          35.6762,
+          139.6503
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 157.6,
+        "cost_usd": 6948.0,
+        "co2_kg": 45.0,
+        "sla_risk": "HIGH"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc06",
+        "block_number": 45612106,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Hong Kong [22.3193, 114.1694]",
+        "destination_point": "Port of Tokyo [35.6762, 139.6503]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8007",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Hong Kong",
+            "Port of Kaohsiung",
+            "Port of Tokyo"
+          ],
+          "waypoint_coords": [
+            [
+              22.3193,
+              114.1694
+            ],
+            [
+              22.6273,
+              120.3014
+            ],
+            [
+              35.6762,
+              139.6503
+            ]
+          ],
+          "estimated_transit_hours": 52.0,
+          "base_freight_cost_usd": 3746.0,
+          "co2_emissions_kg": 84.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Hong Kong (Port)",
+            "end_node": "Port of Tokyo (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc06",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8007",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Hong Kong",
+            "Port of Tokyo"
+          ],
+          "waypoint_coords": [
+            [
+              22.3193,
+              114.1694
+            ],
+            [
+              35.6762,
+              139.6503
+            ]
+          ],
+          "estimated_transit_hours": 9.8,
+          "base_freight_cost_usd": 24443.0,
+          "co2_emissions_kg": 1438.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Hong Kong (Port)",
+            "end_node": "Port of Tokyo (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc06",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8008",
+      "mode": "MARITIME",
+      "vessel_name": "YANG MING WISH",
+      "origin": "Port of Qingdao",
+      "destination": "Port of Sydney",
+      "current_status": "IN_TRANSIT",
+      "current_coordinates": [
+        36.0671,
+        120.3826
+      ],
+      "active_route_coords": [
+        [
+          36.0671,
+          120.3826
+        ],
+        [
+          -27.4698,
+          153.0251
+        ],
+        [
+          -33.8688,
+          151.2093
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 317.2,
+        "cost_usd": 10578.0,
+        "co2_kg": 129.0,
+        "sla_risk": "LOW"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc07",
+        "block_number": 45612107,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Qingdao [36.0671, 120.3826]",
+        "destination_point": "Port of Sydney [-33.8688, 151.2093]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8008",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Qingdao",
+            "Port of Brisbane",
+            "Port of Sydney"
+          ],
+          "waypoint_coords": [
+            [
+              36.0671,
+              120.3826
+            ],
+            [
+              -27.4698,
+              153.0251
+            ],
+            [
+              -33.8688,
+              151.2093
+            ]
+          ],
+          "estimated_transit_hours": 126.4,
+          "base_freight_cost_usd": 10727.0,
+          "co2_emissions_kg": 240.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Qingdao (Port)",
+            "end_node": "Port of Sydney (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc07",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8008",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Qingdao",
+            "Port of Sydney"
+          ],
+          "waypoint_coords": [
+            [
+              36.0671,
+              120.3826
+            ],
+            [
+              -33.8688,
+              151.2093
+            ]
+          ],
+          "estimated_transit_hours": 17.2,
+          "base_freight_cost_usd": 71478.0,
+          "co2_emissions_kg": 4205.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Qingdao (Port)",
+            "end_node": "Port of Sydney (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc07",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8009",
+      "mode": "MARITIME",
+      "vessel_name": "COSCO SHIPPING GEMINI",
+      "origin": "Port of Guangzhou",
+      "destination": "Port of Ho Chi Minh",
+      "current_status": "BOTTLENECK_DETECTED",
+      "current_coordinates": [
+        23.1291,
+        113.2644
+      ],
+      "active_route_coords": [
+        [
+          23.1291,
+          113.2644
+        ],
+        [
+          14.5995,
+          120.9842
+        ],
+        [
+          10.8231,
+          106.6297
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 153.7,
+        "cost_usd": 6859.0,
+        "co2_kg": 43.0,
+        "sla_risk": "HIGH"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc08",
+        "block_number": 45612108,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Guangzhou [23.1291, 113.2644]",
+        "destination_point": "Port of Ho Chi Minh [10.8231, 106.6297]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8009",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Guangzhou",
+            "Port of Manila",
+            "Port of Ho Chi Minh"
+          ],
+          "waypoint_coords": [
+            [
+              23.1291,
+              113.2644
+            ],
+            [
+              14.5995,
+              120.9842
+            ],
+            [
+              10.8231,
+              106.6297
+            ]
+          ],
+          "estimated_transit_hours": 50.1,
+          "base_freight_cost_usd": 3575.0,
+          "co2_emissions_kg": 80.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Guangzhou (Port)",
+            "end_node": "Port of Ho Chi Minh (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc08",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8009",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Guangzhou",
+            "Port of Ho Chi Minh"
+          ],
+          "waypoint_coords": [
+            [
+              23.1291,
+              113.2644
+            ],
+            [
+              10.8231,
+              106.6297
+            ]
+          ],
+          "estimated_transit_hours": 8.1,
+          "base_freight_cost_usd": 13079.0,
+          "co2_emissions_kg": 769.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Guangzhou (Port)",
+            "end_node": "Port of Ho Chi Minh (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc08",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8010",
+      "mode": "MARITIME",
+      "vessel_name": "EVERGREEN EVER GIVEN",
+      "origin": "Port of Tianjin",
+      "destination": "Port of Incheon",
+      "current_status": "IN_TRANSIT",
+      "current_coordinates": [
+        39.3434,
+        117.3616
+      ],
+      "active_route_coords": [
+        [
+          39.3434,
+          117.3616
+        ],
+        [
+          38.914,
+          121.6147
+        ],
+        [
+          37.4563,
+          126.7052
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 96.1,
+        "cost_usd": 5548.0,
+        "co2_kg": 13.0,
+        "sla_risk": "LOW"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc09",
+        "block_number": 45612109,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Tianjin [39.3434, 117.3616]",
+        "destination_point": "Port of Incheon [37.4563, 126.7052]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8010",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Tianjin",
+            "Port of Dalian",
+            "Port of Incheon"
+          ],
+          "waypoint_coords": [
+            [
+              39.3434,
+              117.3616
+            ],
+            [
+              38.914,
+              121.6147
+            ],
+            [
+              37.4563,
+              126.7052
+            ]
+          ],
+          "estimated_transit_hours": 23.2,
+          "base_freight_cost_usd": 1054.0,
+          "co2_emissions_kg": 24.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Tianjin (Port)",
+            "end_node": "Port of Incheon (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc09",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8010",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Tianjin",
+            "Port of Incheon"
+          ],
+          "waypoint_coords": [
+            [
+              39.3434,
+              117.3616
+            ],
+            [
+              37.4563,
+              126.7052
+            ]
+          ],
+          "estimated_transit_hours": 7.1,
+          "base_freight_cost_usd": 7143.0,
+          "co2_emissions_kg": 420.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Tianjin (Port)",
+            "end_node": "Port of Incheon (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc09",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8011",
+      "mode": "MARITIME",
+      "vessel_name": "MAERSK MC-KINNEY MOLLER",
+      "origin": "Port of Klang",
+      "destination": "Port of Felixstowe",
+      "current_status": "BOTTLENECK_DETECTED",
+      "current_coordinates": [
+        3.0,
+        101.4
+      ],
+      "active_route_coords": [
+        [
+          3.0,
+          101.4
+        ],
+        [
+          18.95,
+          72.95
+        ],
+        [
+          29.9753,
+          32.5599
+        ],
+        [
+          51.9628,
+          1.3511
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 396.1,
+        "cost_usd": 12373.0,
+        "co2_kg": 170.0,
+        "sla_risk": "HIGH"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc0a",
+        "block_number": 45612110,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Klang [3.0, 101.4]",
+        "destination_point": "Port of Felixstowe [51.9628, 1.3511]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8011",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Klang",
+            "Suez Canal",
+            "Port of Felixstowe"
+          ],
+          "waypoint_coords": [
+            [
+              3.0,
+              101.4
+            ],
+            [
+              29.9753,
+              32.5599
+            ],
+            [
+              51.9628,
+              1.3511
+            ]
+          ],
+          "estimated_transit_hours": 163.2,
+          "base_freight_cost_usd": 14178.0,
+          "co2_emissions_kg": 318.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Klang (Port)",
+            "end_node": "Port of Felixstowe (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc0a",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8011",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Klang",
+            "Port of Felixstowe"
+          ],
+          "waypoint_coords": [
+            [
+              3.0,
+              101.4
+            ],
+            [
+              51.9628,
+              1.3511
+            ]
+          ],
+          "estimated_transit_hours": 19.9,
+          "base_freight_cost_usd": 88649.0,
+          "co2_emissions_kg": 5215.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Klang (Port)",
+            "end_node": "Port of Felixstowe (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc0a",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8012",
+      "mode": "MARITIME",
+      "vessel_name": "CMA CGM ANTOINE",
+      "origin": "Port of Laem Chabang",
+      "destination": "Port of Melbourne",
+      "current_status": "IN_TRANSIT",
+      "current_coordinates": [
+        13.0827,
+        100.9161
+      ],
+      "active_route_coords": [
+        [
+          13.0827,
+          100.9161
+        ],
+        [
+          1.3653,
+          103.5486
+        ],
+        [
+          -37.8136,
+          144.9631
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 284.0,
+        "cost_usd": 9822.0,
+        "co2_kg": 111.0,
+        "sla_risk": "LOW"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc0b",
+        "block_number": 45612111,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Laem Chabang [13.0827, 100.9161]",
+        "destination_point": "Port of Melbourne [-37.8136, 144.9631]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8012",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Laem Chabang",
+            "Port of Tanjung Pelepas",
+            "Port of Melbourne"
+          ],
+          "waypoint_coords": [
+            [
+              13.0827,
+              100.9161
+            ],
+            [
+              1.3653,
+              103.5486
+            ],
+            [
+              -37.8136,
+              144.9631
+            ]
+          ],
+          "estimated_transit_hours": 110.9,
+          "base_freight_cost_usd": 9273.0,
+          "co2_emissions_kg": 208.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Laem Chabang (Port)",
+            "end_node": "Port of Melbourne (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc0b",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8012",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Laem Chabang",
+            "Port of Melbourne"
+          ],
+          "waypoint_coords": [
+            [
+              13.0827,
+              100.9161
+            ],
+            [
+              -37.8136,
+              144.9631
+            ]
+          ],
+          "estimated_transit_hours": 15.7,
+          "base_freight_cost_usd": 61930.0,
+          "co2_emissions_kg": 3643.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Laem Chabang (Port)",
+            "end_node": "Port of Melbourne (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc0b",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8013",
+      "mode": "MARITIME",
+      "vessel_name": "ONE STORK",
+      "origin": "Port of Xiamen",
+      "destination": "Port of Osaka",
+      "current_status": "BOTTLENECK_DETECTED",
+      "current_coordinates": [
+        24.4798,
+        118.0894
+      ],
+      "active_route_coords": [
+        [
+          24.4798,
+          118.0894
+        ],
+        [
+          25.1283,
+          121.7419
+        ],
+        [
+          34.6937,
+          135.5023
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 131.2,
+        "cost_usd": 6347.0,
+        "co2_kg": 31.0,
+        "sla_risk": "HIGH"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc0c",
+        "block_number": 45612112,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Xiamen [24.4798, 118.0894]",
+        "destination_point": "Port of Osaka [34.6937, 135.5023]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8013",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Xiamen",
+            "Port of Keelung",
+            "Port of Osaka"
+          ],
+          "waypoint_coords": [
+            [
+              24.4798,
+              118.0894
+            ],
+            [
+              25.1283,
+              121.7419
+            ],
+            [
+              34.6937,
+              135.5023
+            ]
+          ],
+          "estimated_transit_hours": 39.6,
+          "base_freight_cost_usd": 2591.0,
+          "co2_emissions_kg": 58.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Xiamen (Port)",
+            "end_node": "Port of Osaka (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc0c",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8013",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Xiamen",
+            "Port of Osaka"
+          ],
+          "waypoint_coords": [
+            [
+              24.4798,
+              118.0894
+            ],
+            [
+              34.6937,
+              135.5023
+            ]
+          ],
+          "estimated_transit_hours": 8.7,
+          "base_freight_cost_usd": 17221.0,
+          "co2_emissions_kg": 1013.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Xiamen (Port)",
+            "end_node": "Port of Osaka (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc0c",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8014",
+      "mode": "MARITIME",
+      "vessel_name": "HAPAG-LLOYD AL DHAFRA",
+      "origin": "Port of Tanjung Priok",
+      "destination": "Port of Adelaide",
+      "current_status": "IN_TRANSIT",
+      "current_coordinates": [
+        -6.1,
+        106.8833
+      ],
+      "active_route_coords": [
+        [
+          -6.1,
+          106.8833
+        ],
+        [
+          -32.0569,
+          115.7428
+        ],
+        [
+          -34.8422,
+          138.5042
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 219.4,
+        "cost_usd": 8353.0,
+        "co2_kg": 77.0,
+        "sla_risk": "LOW"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc0d",
+        "block_number": 45612113,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Tanjung Priok [-6.1, 106.8833]",
+        "destination_point": "Port of Adelaide [-34.8422, 138.5042]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8014",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Tanjung Priok",
+            "Port of Fremantle",
+            "Port of Adelaide"
+          ],
+          "waypoint_coords": [
+            [
+              -6.1,
+              106.8833
+            ],
+            [
+              -32.0569,
+              115.7428
+            ],
+            [
+              -34.8422,
+              138.5042
+            ]
+          ],
+          "estimated_transit_hours": 80.8,
+          "base_freight_cost_usd": 6449.0,
+          "co2_emissions_kg": 144.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Tanjung Priok (Port)",
+            "end_node": "Port of Adelaide (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc0d",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8014",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Tanjung Priok",
+            "Port of Adelaide"
+          ],
+          "waypoint_coords": [
+            [
+              -6.1,
+              106.8833
+            ],
+            [
+              -34.8422,
+              138.5042
+            ]
+          ],
+          "estimated_transit_hours": 12.1,
+          "base_freight_cost_usd": 38675.0,
+          "co2_emissions_kg": 2275.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Tanjung Priok (Port)",
+            "end_node": "Port of Adelaide (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc0d",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8015",
+      "mode": "MARITIME",
+      "vessel_name": "MSC GULSUN",
+      "origin": "Port of New York/New Jersey",
+      "destination": "Port of Miami",
+      "current_status": "BOTTLENECK_DETECTED",
+      "current_coordinates": [
+        40.6681,
+        -74.161
+      ],
+      "active_route_coords": [
+        [
+          40.6681,
+          -74.161
+        ],
+        [
+          32.0809,
+          -81.0912
+        ],
+        [
+          25.7617,
+          -80.1918
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 124.7,
+        "cost_usd": 6200.0,
+        "co2_kg": 28.0,
+        "sla_risk": "HIGH"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc0e",
+        "block_number": 45612114,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of New York/New Jersey [40.6681, -74.161]",
+        "destination_point": "Port of Miami [25.7617, -80.1918]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8015",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of New York/New Jersey",
+            "HUB_CHICAGO_01",
+            "Port of Miami"
+          ],
+          "waypoint_coords": [
+            [
+              40.6681,
+              -74.161
+            ],
+            [
+              41.8781,
+              -87.6298
+            ],
+            [
+              25.7617,
+              -80.1918
+            ]
+          ],
+          "estimated_transit_hours": 52.7,
+          "base_freight_cost_usd": 3812.0,
+          "co2_emissions_kg": 85.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of New York/New Jersey (Port)",
+            "end_node": "Port of Miami (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc0e",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8015",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of New York/New Jersey",
+            "AIR_ATLANTA_01",
+            "Port of Miami"
+          ],
+          "waypoint_coords": [
+            [
+              40.6681,
+              -74.161
+            ],
+            [
+              33.749,
+              -84.388
+            ],
+            [
+              25.7617,
+              -80.1918
+            ]
+          ],
+          "estimated_transit_hours": 8.9,
+          "base_freight_cost_usd": 18384.0,
+          "co2_emissions_kg": 1081.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of New York/New Jersey (Port)",
+            "end_node": "Port of Miami (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc0e",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8016",
+      "mode": "MARITIME",
+      "vessel_name": "YANG MING WISH",
+      "origin": "Port of Houston",
+      "destination": "Port of Callao",
+      "current_status": "IN_TRANSIT",
+      "current_coordinates": [
+        29.7604,
+        -95.3698
+      ],
+      "active_route_coords": [
+        [
+          29.7604,
+          -95.3698
+        ],
+        [
+          9.08,
+          -79.68
+        ],
+        [
+          -12.0566,
+          -77.1437
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 220.2,
+        "cost_usd": 8372.0,
+        "co2_kg": 78.0,
+        "sla_risk": "LOW"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc0f",
+        "block_number": 45612115,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Houston [29.7604, -95.3698]",
+        "destination_point": "Port of Callao [-12.0566, -77.1437]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8016",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Houston",
+            "HUB_CHICAGO_01",
+            "Port of Callao"
+          ],
+          "waypoint_coords": [
+            [
+              29.7604,
+              -95.3698
+            ],
+            [
+              41.8781,
+              -87.6298
+            ],
+            [
+              -12.0566,
+              -77.1437
+            ]
+          ],
+          "estimated_transit_hours": 113.4,
+          "base_freight_cost_usd": 9510.0,
+          "co2_emissions_kg": 213.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Houston (Port)",
+            "end_node": "Port of Callao (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc0f",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8016",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Houston",
+            "AIR_ATLANTA_01",
+            "Port of Callao"
+          ],
+          "waypoint_coords": [
+            [
+              29.7604,
+              -95.3698
+            ],
+            [
+              33.749,
+              -84.388
+            ],
+            [
+              -12.0566,
+              -77.1437
+            ]
+          ],
+          "estimated_transit_hours": 14.4,
+          "base_freight_cost_usd": 53372.0,
+          "co2_emissions_kg": 3140.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Houston (Port)",
+            "end_node": "Port of Callao (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc0f",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8017",
+      "mode": "MARITIME",
+      "vessel_name": "COSCO SHIPPING GEMINI",
+      "origin": "Port of Santos",
+      "destination": "Port of Montevideo",
+      "current_status": "BOTTLENECK_DETECTED",
+      "current_coordinates": [
+        -23.9608,
+        -46.3339
+      ],
+      "active_route_coords": [
+        [
+          -23.9608,
+          -46.3339
+        ],
+        [
+          -34.6037,
+          -58.3816
+        ],
+        [
+          -34.9011,
+          -56.1645
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 125.3,
+        "cost_usd": 6213.0,
+        "co2_kg": 28.0,
+        "sla_risk": "HIGH"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc10",
+        "block_number": 45612116,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Santos [-23.9608, -46.3339]",
+        "destination_point": "Port of Montevideo [-34.9011, -56.1645]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8017",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Santos",
+            "Port of Buenos Aires",
+            "Port of Montevideo"
+          ],
+          "waypoint_coords": [
+            [
+              -23.9608,
+              -46.3339
+            ],
+            [
+              -34.6037,
+              -58.3816
+            ],
+            [
+              -34.9011,
+              -56.1645
+            ]
+          ],
+          "estimated_transit_hours": 36.9,
+          "base_freight_cost_usd": 2332.0,
+          "co2_emissions_kg": 52.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Santos (Port)",
+            "end_node": "Port of Montevideo (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc10",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8017",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Santos",
+            "Port of Montevideo"
+          ],
+          "waypoint_coords": [
+            [
+              -23.9608,
+              -46.3339
+            ],
+            [
+              -34.9011,
+              -56.1645
+            ]
+          ],
+          "estimated_transit_hours": 8.1,
+          "base_freight_cost_usd": 13114.0,
+          "co2_emissions_kg": 771.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Santos (Port)",
+            "end_node": "Port of Montevideo (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc10",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8018",
+      "mode": "MARITIME",
+      "vessel_name": "EVERGREEN EVER GIVEN",
+      "origin": "Port of Valencia",
+      "destination": "Port of Marseille",
+      "current_status": "IN_TRANSIT",
+      "current_coordinates": [
+        39.4699,
+        -0.3763
+      ],
+      "active_route_coords": [
+        [
+          39.4699,
+          -0.3763
+        ],
+        [
+          41.3851,
+          2.1734
+        ],
+        [
+          43.2965,
+          5.3698
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 90.3,
+        "cost_usd": 5417.0,
+        "co2_kg": 10.0,
+        "sla_risk": "LOW"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc11",
+        "block_number": 45612117,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Valencia [39.4699, -0.3763]",
+        "destination_point": "Port of Marseille [43.2965, 5.3698]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8018",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Valencia",
+            "Port of Barcelona",
+            "Port of Marseille"
+          ],
+          "waypoint_coords": [
+            [
+              39.4699,
+              -0.3763
+            ],
+            [
+              41.3851,
+              2.1734
+            ],
+            [
+              43.2965,
+              5.3698
+            ]
+          ],
+          "estimated_transit_hours": 20.5,
+          "base_freight_cost_usd": 801.0,
+          "co2_emissions_kg": 18.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Valencia (Port)",
+            "end_node": "Port of Marseille (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc11",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8018",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Valencia",
+            "Port of Marseille"
+          ],
+          "waypoint_coords": [
+            [
+              39.4699,
+              -0.3763
+            ],
+            [
+              43.2965,
+              5.3698
+            ]
+          ],
+          "estimated_transit_hours": 6.9,
+          "base_freight_cost_usd": 5446.0,
+          "co2_emissions_kg": 320.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Valencia (Port)",
+            "end_node": "Port of Marseille (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc11",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8019",
+      "mode": "MARITIME",
+      "vessel_name": "MAERSK MC-KINNEY MOLLER",
+      "origin": "Port of Algeciras",
+      "destination": "Port of Dakar",
+      "current_status": "BOTTLENECK_DETECTED",
+      "current_coordinates": [
+        36.1408,
+        -5.4562
+      ],
+      "active_route_coords": [
+        [
+          36.1408,
+          -5.4562
+        ],
+        [
+          35.7595,
+          -5.834
+        ],
+        [
+          14.7167,
+          -17.4677
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 148.2,
+        "cost_usd": 6732.0,
+        "co2_kg": 40.0,
+        "sla_risk": "HIGH"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc12",
+        "block_number": 45612118,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Algeciras [36.1408, -5.4562]",
+        "destination_point": "Port of Dakar [14.7167, -17.4677]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8019",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Algeciras",
+            "Port of Tangier",
+            "Port of Dakar"
+          ],
+          "waypoint_coords": [
+            [
+              36.1408,
+              -5.4562
+            ],
+            [
+              35.7595,
+              -5.834
+            ],
+            [
+              14.7167,
+              -17.4677
+            ]
+          ],
+          "estimated_transit_hours": 47.5,
+          "base_freight_cost_usd": 3332.0,
+          "co2_emissions_kg": 75.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Algeciras (Port)",
+            "end_node": "Port of Dakar (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc12",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8019",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Algeciras",
+            "Port of Dakar"
+          ],
+          "waypoint_coords": [
+            [
+              36.1408,
+              -5.4562
+            ],
+            [
+              14.7167,
+              -17.4677
+            ]
+          ],
+          "estimated_transit_hours": 9.6,
+          "base_freight_cost_usd": 22650.0,
+          "co2_emissions_kg": 1332.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Algeciras (Port)",
+            "end_node": "Port of Dakar (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc12",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8020",
+      "mode": "MARITIME",
+      "vessel_name": "CMA CGM ANTOINE",
+      "origin": "Port of Salalah",
+      "destination": "Port Said",
+      "current_status": "IN_TRANSIT",
+      "current_coordinates": [
+        17.0152,
+        54.0924
+      ],
+      "active_route_coords": [
+        [
+          17.0152,
+          54.0924
+        ],
+        [
+          21.5433,
+          39.1728
+        ],
+        [
+          31.2653,
+          32.3019
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 155.5,
+        "cost_usd": 6900.0,
+        "co2_kg": 44.0,
+        "sla_risk": "LOW"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc13",
+        "block_number": 45612119,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Salalah [17.0152, 54.0924]",
+        "destination_point": "Port Said [31.2653, 32.3019]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8020",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Salalah",
+            "Port of Jeddah",
+            "Port Said"
+          ],
+          "waypoint_coords": [
+            [
+              17.0152,
+              54.0924
+            ],
+            [
+              21.5433,
+              39.1728
+            ],
+            [
+              31.2653,
+              32.3019
+            ]
+          ],
+          "estimated_transit_hours": 51.0,
+          "base_freight_cost_usd": 3653.0,
+          "co2_emissions_kg": 82.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Salalah (Port)",
+            "end_node": "Port Said (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc13",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8020",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Salalah",
+            "Port Said"
+          ],
+          "waypoint_coords": [
+            [
+              17.0152,
+              54.0924
+            ],
+            [
+              31.2653,
+              32.3019
+            ]
+          ],
+          "estimated_transit_hours": 9.6,
+          "base_freight_cost_usd": 23043.0,
+          "co2_emissions_kg": 1355.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Salalah (Port)",
+            "end_node": "Port Said (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc13",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8021",
+      "mode": "MARITIME",
+      "vessel_name": "ONE STORK",
+      "origin": "Port of Durban",
+      "destination": "Port of Dar es Salaam",
+      "current_status": "BOTTLENECK_DETECTED",
+      "current_coordinates": [
+        -29.8587,
+        31.0218
+      ],
+      "active_route_coords": [
+        [
+          -29.8587,
+          31.0218
+        ],
+        [
+          -4.0435,
+          39.6682
+        ],
+        [
+          -6.7924,
+          39.2083
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 166.9,
+        "cost_usd": 7159.0,
+        "co2_kg": 50.0,
+        "sla_risk": "HIGH"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc14",
+        "block_number": 45612120,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Durban [-29.8587, 31.0218]",
+        "destination_point": "Port of Dar es Salaam [-6.7924, 39.2083]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8021",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Durban",
+            "Port of Mombasa",
+            "Port of Dar es Salaam"
+          ],
+          "waypoint_coords": [
+            [
+              -29.8587,
+              31.0218
+            ],
+            [
+              -4.0435,
+              39.6682
+            ],
+            [
+              -6.7924,
+              39.2083
+            ]
+          ],
+          "estimated_transit_hours": 56.3,
+          "base_freight_cost_usd": 4151.0,
+          "co2_emissions_kg": 93.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Durban (Port)",
+            "end_node": "Port of Dar es Salaam (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc14",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8021",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Durban",
+            "Port of Dar es Salaam"
+          ],
+          "waypoint_coords": [
+            [
+              -29.8587,
+              31.0218
+            ],
+            [
+              -6.7924,
+              39.2083
+            ]
+          ],
+          "estimated_transit_hours": 9.6,
+          "base_freight_cost_usd": 22984.0,
+          "co2_emissions_kg": 1352.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Durban (Port)",
+            "end_node": "Port of Dar es Salaam (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc14",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8022",
+      "mode": "MARITIME",
+      "vessel_name": "HAPAG-LLOYD AL DHAFRA",
+      "origin": "Port of Vancouver",
+      "destination": "Port of Oakland",
+      "current_status": "IN_TRANSIT",
+      "current_coordinates": [
+        49.2827,
+        -123.1207
+      ],
+      "active_route_coords": [
+        [
+          49.2827,
+          -123.1207
+        ],
+        [
+          47.6062,
+          -122.3321
+        ],
+        [
+          37.8044,
+          -122.2711
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 108.7,
+        "cost_usd": 5835.0,
+        "co2_kg": 19.0,
+        "sla_risk": "LOW"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc15",
+        "block_number": 45612121,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Vancouver [49.2827, -123.1207]",
+        "destination_point": "Port of Oakland [37.8044, -122.2711]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8022",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Vancouver",
+            "Port of Seattle",
+            "Port of Oakland"
+          ],
+          "waypoint_coords": [
+            [
+              49.2827,
+              -123.1207
+            ],
+            [
+              47.6062,
+              -122.3321
+            ],
+            [
+              37.8044,
+              -122.2711
+            ]
+          ],
+          "estimated_transit_hours": 29.1,
+          "base_freight_cost_usd": 1607.0,
+          "co2_emissions_kg": 36.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Vancouver (Port)",
+            "end_node": "Port of Oakland (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc15",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8022",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Vancouver",
+            "Port of Oakland"
+          ],
+          "waypoint_coords": [
+            [
+              49.2827,
+              -123.1207
+            ],
+            [
+              37.8044,
+              -122.2711
+            ]
+          ],
+          "estimated_transit_hours": 7.7,
+          "base_freight_cost_usd": 10864.0,
+          "co2_emissions_kg": 639.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Vancouver (Port)",
+            "end_node": "Port of Oakland (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc15",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8023",
+      "mode": "MARITIME",
+      "vessel_name": "MSC GULSUN",
+      "origin": "Port of Bremerhaven",
+      "destination": "Port of Aarhus",
+      "current_status": "BOTTLENECK_DETECTED",
+      "current_coordinates": [
+        53.5463,
+        8.5831
+      ],
+      "active_route_coords": [
+        [
+          53.5463,
+          8.5831
+        ],
+        [
+          57.7089,
+          11.9746
+        ],
+        [
+          56.1629,
+          10.2039
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 92.3,
+        "cost_usd": 5463.0,
+        "co2_kg": 11.0,
+        "sla_risk": "HIGH"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc16",
+        "block_number": 45612122,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Bremerhaven [53.5463, 8.5831]",
+        "destination_point": "Port of Aarhus [56.1629, 10.2039]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8023",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Bremerhaven",
+            "Port of Gothenburg",
+            "Port of Aarhus"
+          ],
+          "waypoint_coords": [
+            [
+              53.5463,
+              8.5831
+            ],
+            [
+              57.7089,
+              11.9746
+            ],
+            [
+              56.1629,
+              10.2039
+            ]
+          ],
+          "estimated_transit_hours": 21.5,
+          "base_freight_cost_usd": 890.0,
+          "co2_emissions_kg": 20.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Bremerhaven (Port)",
+            "end_node": "Port of Aarhus (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc16",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8023",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Bremerhaven",
+            "Port of Aarhus"
+          ],
+          "waypoint_coords": [
+            [
+              53.5463,
+              8.5831
+            ],
+            [
+              56.1629,
+              10.2039
+            ]
+          ],
+          "estimated_transit_hours": 6.4,
+          "base_freight_cost_usd": 2625.0,
+          "co2_emissions_kg": 154.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Bremerhaven (Port)",
+            "end_node": "Port of Aarhus (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc16",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8024",
+      "mode": "MARITIME",
+      "vessel_name": "YANG MING WISH",
+      "origin": "Port of Le Havre",
+      "destination": "Port of Dublin",
+      "current_status": "IN_TRANSIT",
+      "current_coordinates": [
+        49.4944,
+        0.1079
+      ],
+      "active_route_coords": [
+        [
+          49.4944,
+          0.1079
+        ],
+        [
+          50.9097,
+          -1.4044
+        ],
+        [
+          53.3498,
+          -6.2603
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 89.7,
+        "cost_usd": 5402.0,
+        "co2_kg": 9.0,
+        "sla_risk": "LOW"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc17",
+        "block_number": 45612123,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Le Havre [49.4944, 0.1079]",
+        "destination_point": "Port of Dublin [53.3498, -6.2603]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8024",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Le Havre",
+            "Port of Southampton",
+            "Port of Dublin"
+          ],
+          "waypoint_coords": [
+            [
+              49.4944,
+              0.1079
+            ],
+            [
+              50.9097,
+              -1.4044
+            ],
+            [
+              53.3498,
+              -6.2603
+            ]
+          ],
+          "estimated_transit_hours": 20.3,
+          "base_freight_cost_usd": 774.0,
+          "co2_emissions_kg": 17.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Le Havre (Port)",
+            "end_node": "Port of Dublin (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc17",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8024",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Le Havre",
+            "Port of Dublin"
+          ],
+          "waypoint_coords": [
+            [
+              49.4944,
+              0.1079
+            ],
+            [
+              53.3498,
+              -6.2603
+            ]
+          ],
+          "estimated_transit_hours": 6.8,
+          "base_freight_cost_usd": 5227.0,
+          "co2_emissions_kg": 307.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Le Havre (Port)",
+            "end_node": "Port of Dublin (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc17",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8025",
+      "mode": "MARITIME",
+      "vessel_name": "COSCO SHIPPING GEMINI",
+      "origin": "Port of Piraeus",
+      "destination": "Port of Constanta",
+      "current_status": "BOTTLENECK_DETECTED",
+      "current_coordinates": [
+        37.9475,
+        23.6372
+      ],
+      "active_route_coords": [
+        [
+          37.9475,
+          23.6372
+        ],
+        [
+          41.0082,
+          28.9784
+        ],
+        [
+          44.1792,
+          28.6498
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 98.4,
+        "cost_usd": 5601.0,
+        "co2_kg": 14.0,
+        "sla_risk": "HIGH"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc18",
+        "block_number": 45612124,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Piraeus [37.9475, 23.6372]",
+        "destination_point": "Port of Constanta [44.1792, 28.6498]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8025",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Piraeus",
+            "Port of Istanbul",
+            "Port of Constanta"
+          ],
+          "waypoint_coords": [
+            [
+              37.9475,
+              23.6372
+            ],
+            [
+              41.0082,
+              28.9784
+            ],
+            [
+              44.1792,
+              28.6498
+            ]
+          ],
+          "estimated_transit_hours": 24.3,
+          "base_freight_cost_usd": 1155.0,
+          "co2_emissions_kg": 26.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Piraeus (Port)",
+            "end_node": "Port of Constanta (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc18",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8025",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Piraeus",
+            "Port of Constanta"
+          ],
+          "waypoint_coords": [
+            [
+              37.9475,
+              23.6372
+            ],
+            [
+              44.1792,
+              28.6498
+            ]
+          ],
+          "estimated_transit_hours": 7.1,
+          "base_freight_cost_usd": 6885.0,
+          "co2_emissions_kg": 405.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Piraeus (Port)",
+            "end_node": "Port of Constanta (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc18",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8026",
+      "mode": "MARITIME",
+      "vessel_name": "EVERGREEN EVER GIVEN",
+      "origin": "Port of Mumbai",
+      "destination": "Port of Pipavav",
+      "current_status": "IN_TRANSIT",
+      "current_coordinates": [
+        18.9438,
+        72.836
+      ],
+      "active_route_coords": [
+        [
+          18.9438,
+          72.836
+        ],
+        [
+          22.8395,
+          69.7042
+        ],
+        [
+          20.9167,
+          71.5
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 95.6,
+        "cost_usd": 5536.0,
+        "co2_kg": 12.0,
+        "sla_risk": "LOW"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc19",
+        "block_number": 45612125,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Mumbai [18.9438, 72.836]",
+        "destination_point": "Port of Pipavav [20.9167, 71.5]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8026",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Mumbai",
+            "Port of Mundra",
+            "Port of Pipavav"
+          ],
+          "waypoint_coords": [
+            [
+              18.9438,
+              72.836
+            ],
+            [
+              22.8395,
+              69.7042
+            ],
+            [
+              20.9167,
+              71.5
+            ]
+          ],
+          "estimated_transit_hours": 23.0,
+          "base_freight_cost_usd": 1031.0,
+          "co2_emissions_kg": 23.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Mumbai (Port)",
+            "end_node": "Port of Pipavav (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc19",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8026",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Mumbai",
+            "Port of Pipavav"
+          ],
+          "waypoint_coords": [
+            [
+              18.9438,
+              72.836
+            ],
+            [
+              20.9167,
+              71.5
+            ]
+          ],
+          "estimated_transit_hours": 6.3,
+          "base_freight_cost_usd": 2210.0,
+          "co2_emissions_kg": 130.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Mumbai (Port)",
+            "end_node": "Port of Pipavav (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc19",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8027",
+      "mode": "MARITIME",
+      "vessel_name": "MAERSK MC-KINNEY MOLLER",
+      "origin": "Port of Chennai",
+      "destination": "Port of Kolkata",
+      "current_status": "BOTTLENECK_DETECTED",
+      "current_coordinates": [
+        13.0827,
+        80.2707
+      ],
+      "active_route_coords": [
+        [
+          13.0827,
+          80.2707
+        ],
+        [
+          17.6868,
+          83.2185
+        ],
+        [
+          22.5726,
+          88.3639
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 111.0,
+        "cost_usd": 5888.0,
+        "co2_kg": 20.0,
+        "sla_risk": "HIGH"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc1a",
+        "block_number": 45612126,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Chennai [13.0827, 80.2707]",
+        "destination_point": "Port of Kolkata [22.5726, 88.3639]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8027",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Chennai",
+            "Port of Visakhapatnam",
+            "Port of Kolkata"
+          ],
+          "waypoint_coords": [
+            [
+              13.0827,
+              80.2707
+            ],
+            [
+              17.6868,
+              83.2185
+            ],
+            [
+              22.5726,
+              88.3639
+            ]
+          ],
+          "estimated_transit_hours": 30.2,
+          "base_freight_cost_usd": 1707.0,
+          "co2_emissions_kg": 38.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Chennai (Port)",
+            "end_node": "Port of Kolkata (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc1a",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8027",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Chennai",
+            "Port of Kolkata"
+          ],
+          "waypoint_coords": [
+            [
+              13.0827,
+              80.2707
+            ],
+            [
+              22.5726,
+              88.3639
+            ]
+          ],
+          "estimated_transit_hours": 7.8,
+          "base_freight_cost_usd": 11546.0,
+          "co2_emissions_kg": 679.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Chennai (Port)",
+            "end_node": "Port of Kolkata (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc1a",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8028",
+      "mode": "MARITIME",
+      "vessel_name": "CMA CGM ANTOINE",
+      "origin": "Port of Karachi",
+      "destination": "Port of Gwadar",
+      "current_status": "IN_TRANSIT",
+      "current_coordinates": [
+        24.8607,
+        67.0011
+      ],
+      "active_route_coords": [
+        [
+          24.8607,
+          67.0011
+        ],
+        [
+          24.7739,
+          67.3486
+        ],
+        [
+          25.1264,
+          62.3225
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 87.6,
+        "cost_usd": 5354.0,
+        "co2_kg": 8.0,
+        "sla_risk": "LOW"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc1b",
+        "block_number": 45612127,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Karachi [24.8607, 67.0011]",
+        "destination_point": "Port of Gwadar [25.1264, 62.3225]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8028",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Karachi",
+            "Port of Port Qasim",
+            "Port of Gwadar"
+          ],
+          "waypoint_coords": [
+            [
+              24.8607,
+              67.0011
+            ],
+            [
+              24.7739,
+              67.3486
+            ],
+            [
+              25.1264,
+              62.3225
+            ]
+          ],
+          "estimated_transit_hours": 19.3,
+          "base_freight_cost_usd": 681.0,
+          "co2_emissions_kg": 15.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Karachi (Port)",
+            "end_node": "Port of Gwadar (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc1b",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8028",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Karachi",
+            "Port of Gwadar"
+          ],
+          "waypoint_coords": [
+            [
+              24.8607,
+              67.0011
+            ],
+            [
+              25.1264,
+              62.3225
+            ]
+          ],
+          "estimated_transit_hours": 6.6,
+          "base_freight_cost_usd": 4016.0,
+          "co2_emissions_kg": 236.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Karachi (Port)",
+            "end_node": "Port of Gwadar (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc1b",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8029",
+      "mode": "MARITIME",
+      "vessel_name": "ONE STORK",
+      "origin": "Port of Chittagong",
+      "destination": "Port of Penang",
+      "current_status": "BOTTLENECK_DETECTED",
+      "current_coordinates": [
+        22.3569,
+        91.7832
+      ],
+      "active_route_coords": [
+        [
+          22.3569,
+          91.7832
+        ],
+        [
+          16.8661,
+          96.1951
+        ],
+        [
+          5.4164,
+          100.3327
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 132.5,
+        "cost_usd": 6375.0,
+        "co2_kg": 32.0,
+        "sla_risk": "HIGH"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc1c",
+        "block_number": 45612128,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Chittagong [22.3569, 91.7832]",
+        "destination_point": "Port of Penang [5.4164, 100.3327]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8029",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Chittagong",
+            "Port of Yangon",
+            "Port of Penang"
+          ],
+          "waypoint_coords": [
+            [
+              22.3569,
+              91.7832
+            ],
+            [
+              16.8661,
+              96.1951
+            ],
+            [
+              5.4164,
+              100.3327
+            ]
+          ],
+          "estimated_transit_hours": 40.2,
+          "base_freight_cost_usd": 2645.0,
+          "co2_emissions_kg": 59.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Chittagong (Port)",
+            "end_node": "Port of Penang (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc1c",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8029",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Chittagong",
+            "Port of Penang"
+          ],
+          "waypoint_coords": [
+            [
+              22.3569,
+              91.7832
+            ],
+            [
+              5.4164,
+              100.3327
+            ]
+          ],
+          "estimated_transit_hours": 8.8,
+          "base_freight_cost_usd": 17815.0,
+          "co2_emissions_kg": 1048.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Chittagong (Port)",
+            "end_node": "Port of Penang (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc1c",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    },
+    {
+      "cargo_id": "CONT-8030",
+      "mode": "MARITIME",
+      "vessel_name": "HAPAG-LLOYD AL DHAFRA",
+      "origin": "Port of Auckland",
+      "destination": "Port of Lyttelton",
+      "current_status": "IN_TRANSIT",
+      "current_coordinates": [
+        -36.8485,
+        174.7633
+      ],
+      "active_route_coords": [
+        [
+          -36.8485,
+          174.7633
+        ],
+        [
+          -37.6878,
+          176.1651
+        ],
+        [
+          -43.6031,
+          172.7214
+        ]
+      ],
+      "metrics": {
+        "transit_hours": 97.0,
+        "cost_usd": 5568.0,
+        "co2_kg": 13.0,
+        "sla_risk": "LOW"
+      },
+      "blockchain_provenance": {
+        "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc1d",
+        "block_number": 45612129,
+        "contract_address": "0xbe6E842E5CCD8752EF538B7874530F3bE702e8Ae",
+        "origin_point": "Port of Auckland [-36.8485, 174.7633]",
+        "destination_point": "Port of Lyttelton [-43.6031, 172.7214]",
+        "verified_on_chain": true,
+        "timestamp": "2026-08-22T19:20:00Z"
+      },
+      "alternate_routes": [
+        {
+          "route_id": "ROUTE_AGENT2_INTERMODAL_CONT-8030",
+          "modal_sequence": [
+            "ROAD_TRUCK",
+            "RAIL_FREIGHT"
+          ],
+          "waypoints": [
+            "Port of Auckland",
+            "Port of Tauranga",
+            "Port of Lyttelton"
+          ],
+          "waypoint_coords": [
+            [
+              -36.8485,
+              174.7633
+            ],
+            [
+              -37.6878,
+              176.1651
+            ],
+            [
+              -43.6031,
+              172.7214
+            ]
+          ],
+          "estimated_transit_hours": 23.7,
+          "base_freight_cost_usd": 1093.0,
+          "co2_emissions_kg": 24.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            56,
+            142,
+            60
+          ],
+          "blockchain_message": {
+            "action": "AGENT_2_INTERMODAL_RAIL_OPTIMIZATION",
+            "start_node": "Port of Auckland (Port)",
+            "end_node": "Port of Lyttelton (Port)",
+            "leg_summary": "AGENT 2 DIJKSTRA BYPASS",
+            "tx_hash": "0x913ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc1d",
+            "verified_on_chain": true
+          }
+        },
+        {
+          "route_id": "ROUTE_AGENT2_EXPRESS_AIR_CONT-8030",
+          "modal_sequence": [
+            "AIR_FREIGHT",
+            "ROAD_TRUCK"
+          ],
+          "waypoints": [
+            "Port of Auckland",
+            "Port of Lyttelton"
+          ],
+          "waypoint_coords": [
+            [
+              -36.8485,
+              174.7633
+            ],
+            [
+              -43.6031,
+              172.7214
+            ]
+          ],
+          "estimated_transit_hours": 7.0,
+          "base_freight_cost_usd": 6551.0,
+          "co2_emissions_kg": 385.0,
+          "risk_grade": "LOW",
+          "color_gradient": [
+            30,
+            144,
+            255
+          ],
+          "blockchain_message": {
+            "action": "EXPRESS_AIR_CARGO_BYPASS",
+            "start_node": "Port of Auckland (Port)",
+            "end_node": "Port of Lyttelton (Port)",
+            "leg_summary": "EXPRESS AIR CARGO",
+            "tx_hash": "0x813ac360d9d7f3238605f2b9fcbc31a2bf32a5e0f1eac420964ccc4588dcc1d",
+            "verified_on_chain": true
+          }
+        }
+      ]
+    }
+  ]
+}
