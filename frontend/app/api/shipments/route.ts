@@ -4,9 +4,9 @@ import path from 'path';
 import { createClient } from '@supabase/supabase-js';
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://palvwjxfasrwvstbccld.supabase.co';
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || process.env.SUPABASE_KEY || '';
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || process.env.SUPABASE_KEY;
 
-const supabase = createClient(supabaseUrl, supabaseKey);
+const supabase = (supabaseUrl && supabaseKey) ? createClient(supabaseUrl, supabaseKey) : null;
 
 const AREA_COORDS: Record<string, [number, number]> = {
   'Shanghai Port': [31.2304, 121.4737],
@@ -50,9 +50,11 @@ function resolveAreaCoords(areaName: string): [number, number] {
 export async function GET() {
   let supabaseShipments: any[] = [];
 
-  // Step 1: Query Supabase container_events and ships tables directly
-  try {
-    const { data: ships } = await supabase.from('ships').select('*');
+  // Step 1: Query Supabase container_events and ships tables directly if configured
+  if (supabase) {
+    try {
+      const querySupabase = async () => {
+        const { data: ships } = await supabase.from('ships').select('*');
     const shipNameMap: Record<string, string> = {};
     if (ships && ships.length) {
       ships.forEach((s: any) => {
@@ -235,15 +237,21 @@ export async function GET() {
                 tx_hash: '0x' + Math.random().toString(16).slice(2),
                 verified_on_chain: true
               },
-              leg_breakdown: alt2Legs
             }
           ]
         };
       });
     }
-  } catch (err) {
-    console.warn('Supabase fetch error in route API:', err);
-  }
+  };
+
+  await Promise.race([
+    querySupabase(),
+    new Promise((_, reject) => setTimeout(() => reject(new Error('Supabase request timeout')), 1000))
+  ]);
+} catch (err) {
+  console.warn('Supabase fetch error/timeout in route API, proceeding with backend fallback:', err);
+}
+}
 
   // Step 2: Attempt to fetch from FastAPI backend
   try {
