@@ -156,7 +156,7 @@ export default function CommandCenterPage() {
     try {
       let res = await fetch('/api/shipments');
       if (!res.ok) {
-        res = await fetch('http://localhost:8000/api/v1/shipments');
+        res = await fetch('/backend-api/api/v1/shipments');
       }
 
       if (res.ok) {
@@ -241,7 +241,7 @@ export default function CommandCenterPage() {
       });
 
       if (!res.ok) {
-        res = await fetch('http://localhost:8000/api/v1/blockchain/reroute', {
+        res = await fetch('/backend-api/api/v1/blockchain/reroute', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({

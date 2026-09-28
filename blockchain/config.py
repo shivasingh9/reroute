@@ -16,24 +16,12 @@ try:
     from web3 import Web3
     from web3.middleware import ExtraDataToPOAMiddleware
 except ImportError:
-    for sp in [
-        "/Users/tanmaykadam/miniconda3/lib/python3.13/site-packages",
-        "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages"
-    ]:
-        if sp not in sys.path and os.path.exists(sp):
-            sys.path.append(sp)
     from web3 import Web3
     from web3.middleware import ExtraDataToPOAMiddleware
 
 try:
     from supabase import create_client, Client
 except ImportError:
-    for sp in [
-        "/Users/tanmaykadam/miniconda3/lib/python3.13/site-packages",
-        "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages"
-    ]:
-        if sp not in sys.path and os.path.exists(sp):
-            sys.path.append(sp)
     from supabase import create_client, Client
 
 # Load .env / .env.local from project root and frontend/
@@ -52,18 +40,16 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 POLYGON_RPC_URL: str = os.getenv("POLYGON_RPC_URL", "https://polygon-amoy-bor-rpc.publicnode.com")
 POLYGON_CHAIN_ID: int = int(os.getenv("POLYGON_CHAIN_ID", "80002"))
 
-DEFAULT_TESTNET_KEY = "0x8f2a55949038a9610f50df23b588365c7673a610d4c4f3c5211da07d62073b9f"
-
-OWNER_PRIVATE_KEY: str = os.getenv("OWNER_PRIVATE_KEY") or DEFAULT_TESTNET_KEY
+OWNER_PRIVATE_KEY: str = os.getenv("OWNER_PRIVATE_KEY", "")
 
 if OWNER_PRIVATE_KEY:
     try:
         w3_temp = Web3()
         OWNER_ADDRESS = w3_temp.eth.account.from_key(OWNER_PRIVATE_KEY).address
     except Exception:
-        OWNER_ADDRESS = "0x07FB424Ff100F9f3F7ad0A04E11c09ED9fca5ef6"
+        OWNER_ADDRESS = os.getenv("OWNER_ADDRESS", "0x07FB424Ff100F9f3F7ad0A04E11c09ED9fca5ef6")
 else:
-    OWNER_ADDRESS = "0x07FB424Ff100F9f3F7ad0A04E11c09ED9fca5ef6"
+    OWNER_ADDRESS = os.getenv("OWNER_ADDRESS", "0x07FB424Ff100F9f3F7ad0A04E11c09ED9fca5ef6")
 
 OWNER_ADDRESS = Web3.to_checksum_address(OWNER_ADDRESS)
 

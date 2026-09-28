@@ -478,4 +478,5 @@ def run_full_pipeline(payload: DisruptionPayload, cargo_id: str = Query("CARGO_2
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)

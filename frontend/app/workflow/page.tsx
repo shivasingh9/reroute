@@ -341,7 +341,7 @@ export default function WorkflowPage() {
 
     // Non-blocking trigger to backend FastAPI route
     try {
-      fetch(`http://localhost:8000${endpoint}`).catch(() => {});
+      fetch(`/backend-api${endpoint}`).catch(() => {});
     } catch {}
 
     // Loop through each node sequentially with a GUARANTEED 2.5s delay & auto-expansion

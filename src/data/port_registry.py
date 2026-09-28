@@ -40,12 +40,17 @@ class GlobalPortRegistry:
 
     def _load_registry(self):
         self.ports: Dict[str, PortRecord] = {}
-        csv_path = "backend/data/world_ports.csv"
+        base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+        csv_path = os.path.join(base_dir, "backend", "data", "world_ports.csv")
+        if not os.path.exists(csv_path):
+            csv_path = "backend/data/world_ports.csv"
         
         # Run conversion if the target file is missing
         if not os.path.exists(csv_path):
             from src.data.convert_excel import convert_dataset
             convert_dataset()
+            if not os.path.exists(csv_path):
+                csv_path = os.path.join(base_dir, "backend", "data", "world_ports.csv")
             
         if os.path.exists(csv_path):
             with open(csv_path, "r", encoding="utf-8") as f:

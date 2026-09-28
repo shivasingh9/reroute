@@ -99,7 +99,7 @@ export default function ChaosPanelPage() {
 
     try {
       // 1. Trigger backend live agent FastAPI endpoint
-      const res = await fetch(`http://localhost:8000${preset.endpoint}`);
+      const res = await fetch(`/backend-api${preset.endpoint}`);
       if (res.ok) {
         const data = await res.json();
         setLastMissionData(data);

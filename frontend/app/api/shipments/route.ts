@@ -245,9 +245,11 @@ export async function GET() {
     console.warn('Supabase fetch error in route API:', err);
   }
 
-  // Step 2: Attempt to fetch from FastAPI backend running on port 8000
+  // Step 2: Attempt to fetch from FastAPI backend
   try {
-    const res = await fetch('http://127.0.0.1:8000/api/v1/shipments', { cache: 'no-store' });
+    const rawBackendUrl = process.env.BACKEND_API_URL || 'http://127.0.0.1:8000';
+    const backendUrl = rawBackendUrl.replace(/\/+$/, '');
+    const res = await fetch(`${backendUrl}/api/v1/shipments`, { cache: 'no-store' });
     if (res.ok) {
       const data = await res.json();
       if (data.shipments) {

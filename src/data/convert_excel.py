@@ -51,12 +51,20 @@ COORDINATES_LOOKUP["PORT_LOS_ANGELES"] = (33.7432, -118.2673, "North Pacific Oce
 
 def convert_dataset():
     """Converts root or backend port datasets to standardized world_ports.csv."""
-    os.makedirs("backend/data", exist_ok=True)
-    target_path = "backend/data/world_ports.csv"
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    os.makedirs(os.path.join(base_dir, "backend", "data"), exist_ok=True)
+    target_path = os.path.join(base_dir, "backend", "data", "world_ports.csv")
 
     # Search for Port_Data.csv in workspace root first, then check other locations
     source_file = None
-    possible_paths = ["Port_Data.csv", "backend/data/world_ports.xlsx", "backend/data/ports.xlsx"]
+    possible_paths = [
+        os.path.join(base_dir, "Port_Data.csv"),
+        "Port_Data.csv",
+        os.path.join(base_dir, "backend", "data", "world_ports.xlsx"),
+        "backend/data/world_ports.xlsx",
+        os.path.join(base_dir, "backend", "data", "ports.xlsx"),
+        "backend/data/ports.xlsx"
+    ]
     for path in possible_paths:
         if os.path.exists(path):
             source_file = path

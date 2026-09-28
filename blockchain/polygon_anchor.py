@@ -49,6 +49,10 @@ def anchor_hash(event_hash: str, timeout: int = 120) -> AnchorResult:
         AnchorResult with tx_hash, status, and optional error.
     """
     try:
+        if not OWNER_PRIVATE_KEY:
+            print("  ℹ️ OWNER_PRIVATE_KEY not set. Returning simulated anchor hash.")
+            return AnchorResult(tx_hash="0x" + event_hash, status="SIMULATED")
+
         data_hex = "0x" + event_hash
         nonce = w3.eth.get_transaction_count(OWNER_ADDRESS)
 
