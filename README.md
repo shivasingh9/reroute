@@ -1,19 +1,14 @@
 # Autonomous Multi-Agent Disruption Control System
 
-## 1. Team Details
 
-- **Team Name**: Team Scalar
-- **Project Title**: Autonomous Multi-Agent Supply Chain Disruption Control & On-Chain Audit Network
 
----
-
-## 2. Problem Statement in Short
+## 1. Problem Statement in Short
 
 Global supply chains are inherently fragile and vulnerable to catastrophic delays caused by unexpected geopolitical conflicts, severe weather events, labor strikes, and maritime port bottlenecks (such as Suez and Panama Canal blockades). When disruptions occur, traditional logistics systems rely on manual human intervention, disjointed phone/email coordination, and static routing tables. This leads to delayed response times, spiraling demurrage costs, missed SLA deadlines, and lack of verified auditability across multi-carrier networks. The primary challenge is building an autonomous, real-time perception and decision network that can dynamically detect disruptions, evaluate multimodal bypass candidates using dynamic financial and environmental metrics, enforce strict operational constraints, and anchor human-approved rerouting actions on an immutable blockchain ledger.
 
 ---
 
-## 3. Understanding of the Problem Statement
+## 2. Understanding of the Problem Statement
 
 Our team focused on addressing the critical bottleneck in real-time supply chain crisis mitigation: **Autonomous Multi-Agent Perception, Dynamic Path Optimization, and Verifiable Human-in-the-Loop Governance**.
 
@@ -76,7 +71,7 @@ flowchart TD
 
 ---
 
-## 4. Idea Summary
+## 3. Idea Summary
 
 Our solution is an **Autonomous Multi-Agent Disruption Control Network**. It replaces manual logistics management with a coordinated fleet of specialized AI and rule-based micro-agents operating in a distributed decision funnel.
 
@@ -91,7 +86,7 @@ What makes this system unique is its hybrid governance architecture: it achieves
 
 ---
 
-## 5. Proposed Solution
+## 4. Proposed Solution
 
 ### System Architecture and Workflow
 
@@ -129,7 +124,7 @@ sequenceDiagram
 
 ---
 
-## 6. MVP Description
+## 5. MVP Description
 
 The Minimum Viable Product (MVP) delivers a complete, fully functional command center demonstrating automated disruption perception, dynamic rerouting, and on-chain verification.
 
@@ -171,7 +166,7 @@ graph LR
 
 ---
 
-## 7. Impact and Feasibility
+## 6. Impact and Feasibility
 
 ### Technical Feasibility
 
@@ -191,7 +186,7 @@ All components have been fully integrated, tested, and validated with zero compi
 
 ---
 
-## 8. Summary Checklist Verification
+## 7. Summary Checklist Verification
 
 - [x] Final document strictly under 3 pages maximum length.
 - [x] Clear breakdown of problem statement, understanding, proposed solution, and MVP.
